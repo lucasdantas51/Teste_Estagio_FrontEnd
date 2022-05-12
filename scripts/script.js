@@ -1,21 +1,36 @@
 const urlApi = "https://reqres.in/api/users?page=2";
+var divListUser;
 
-function getUser() {
-    axios.get(urlApi)
+async function getUser() {
+    await axios.get(urlApi)
 
     .then( x => {
         let users = x.data.data
+        if (users.length < 0) {
+            divListUser.append('Não há usuários cadastrados.')
+        } 
+        
+        else{
+            divListUser.innerHTML = '';
 
-        for (i=0; i < users.length; i++){
-            createUser(users[i]);
+            // apenas 6 usuarios
+            for (i=0; i < 6; i++){
+                createUser(users[i]);
+            }
+
+            let divPag = document.createElement('div'); divPag.classList.add('pag');
+            let spanPag = document.createElement('span');
+
+            spanPag.innerHTML = 'mostrando ' + users.length + ' de ' + x.data.total;
+            divPag.append(spanPag);
+
+            divListUser.after(divPag);
         }
-
+        
     })
     
     .catch(e => console.log(e))
 }
-
-getUser()
 
 function createUser(user) {
 
@@ -26,6 +41,19 @@ function createUser(user) {
     divUser.getElementsByClassName('foto')[0].src =  user.avatar;
     divUser.getElementsByClassName('nome')[0].innerHTML = user.first_name + ' ' + user.last_name;
     divUser.getElementsByClassName('email')[0].innerHTML = user.email;
+    
+    divListUser.append(divUser);
+}
 
-    document.getElementsByClassName('listUsers')[0].append(divUser);
+
+window.onload = function () {
+    divListUser = document.getElementsByClassName('listUsers')[0];
+    
+    var loding = document.createElement('p'); 
+        loding.classList.add('loading');
+        loding.innerHTML = 'Loading...';
+    
+    divListUser.innerHTML = loding.outerHTML;
+
+    getUser();
 }
