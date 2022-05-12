@@ -5,65 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Login</title>
+    <title>Cadastro</title>
 </head>
 <body>
     <header>
         <img src="assets/logo-uppersoft.png" alt="Logo" >
     </header>
     <div class="container">
-        <div class="position">
+        <div class="position divCadastro">
             
             <div class="title">
                 <h1>Acessar</h1>
             </div>
 
             <div class="inputs">
-                
-                <div>
-                    <label for="nome">Nome completo:</label>
-                    <input type="text" name="nome" id="nome" />
+
+                <div class="line">
+                    <div class="inputLeft">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" name="nome" id="nome" />
+                    </div>
+    
+                    <div class="inputRight">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" />
+                    </div>
+
                 </div>
 
-                <div>
-                    <label for="email">Senha:</label>
-                    <input type="email" name="email" id="email" />
+                <div class="line">
+                    <div class="inputLeft">
+                        <label for="estado">Estado:</label>
+    
+                        <select class="inp">
+                            <option value="" disabled selected></option>
+                            <option value="Solteiro (a)">Solteiro (a)</option>
+                            <option value="Casado (a)">Casado (a)</option>
+                            <option value="Viuvo (a)">Viuvo (a)</option>
+                            <option value="União Estável">União Estável</option>
+                            <option value="Prefiro não declarar">Prefiro não declarar</option>
+                        </select>
+                    </div>
+    
+                    <div class="inputRight">
+                        <label for="sexo">Sexo:</label>
+
+                        <div class="lineRadios">
+                            <input type="radio" name="sexo" id="feminino" />
+                            <label for="feminino">Feminino</label>
+                            
+                            <input type="radio" name="sexo" id="masculino" />
+                            <label for="masculino">Masculino</label>
+                            
+                            <input type="radio" name="sexo" id="outro" />
+                            <label for="outro">Outro</label>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div>
-                    <label for="estado">Estado:</label>
+                <div class="line">
+                    <div class="inputLeft">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" />
+                        <span class="passInfo">A senha deve ter no minimo 6 caracteres</span>
+                    </div>
+    
+                    <div class="inputRight">
+                        <label for="confSenha">Confirmar senha:</label>
+                        <input type="password" name="confSenha" id="confSenha" />
+                    </div>
 
-                    <select class="inp">
-                        <option value="" disabled></option>
-                        <option value="Solteiro (a)">Solteiro (a)</option>
-                        <option value="Casado (a)">Casado (a)</option>
-                        <option value="Viuvo (a)">Viuvo (a)</option>
-                        <option value="União Estável">União Estável</option>
-                        <option value="Prefiro não declarar">Prefiro não declarar</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="sexo">Sexo:</label>
-
-                    <input type="radio" name="sexo" id="feminino" />
-                    <label for="feminino">Feminino</label>
-                    
-                    <input type="radio" name="sexo" id="masculino" />
-                    <label for="masculino">Masculino</label>
-                    
-                    <input type="radio" name="sexo" id="outro" />
-                    <label for="outro">Outro</label>
-                </div>
-
-                <div>
-                    <label for="senha">Senha:</label>
-                    <input type="password" name="senha" id="senha" />
-                </div>
-
-                <div>
-                    <label for="confSenha">Confirmar senha:</label>
-                    <input type="password" name="confSenha" id="confSenha" />
                 </div>
 
             </div>

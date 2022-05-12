@@ -77,6 +77,7 @@ input, .inp {
     border: 1px solid #174DBA;
     border-radius: 5px;
     padding: .5rem 0;
+    margin-top: .2rem;
 }
 
 .buttons {
@@ -88,11 +89,17 @@ input, .inp {
         text-align: center;
     }
 
+    .buttons span a {
+        color: #174DBA;
+        text-decoration: none;
+    }
+
 .btnPrimary {
     /* width: 100%; */
+    width: 230px;
     background-color: #174DBA;
     padding: .5rem;
-    margin: 2rem 0;
+    margin: 2rem auto;
     border-radius: 5px;
     text-align: center;
     color: #fff;
@@ -134,3 +141,35 @@ input, .inp {
         color: #174DBA;
         width: 100%;
     }
+
+.divCadastro {
+    padding: 2rem 3rem;
+}
+
+.line {
+    display: flex;
+}
+    .line .inputLeft {
+        margin-right: 1rem;
+    }
+    .line .inputRight {
+        margin-left: 1rem;
+    }
+
+.lineRadios {
+    display: flex;
+}
+    .lineRadios label {
+        font-weight: normal !important;
+    }
+
+select {
+    color: #174DBA;
+}
+
+.passInfo {
+    color: #aeaeae;
+    font-size: 14px;
+    display: block;
+    margin-top: 0.3rem;
+}
