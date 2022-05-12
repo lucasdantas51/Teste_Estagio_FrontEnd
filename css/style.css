@@ -84,9 +84,11 @@ input, .inp {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 1rem auto;
 }
     .buttons span {
         text-align: center;
+        color: #505050;
     }
 
     .buttons span a {
@@ -99,7 +101,7 @@ input, .inp {
     width: 230px;
     background-color: #174DBA;
     padding: .5rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     border-radius: 5px;
     text-align: center;
     color: #fff;
@@ -108,10 +110,21 @@ input, .inp {
     font-size: 16px;
 }
 
-.listUsers{
+.listUsers {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.divTitle {
+    margin: 3rem auto 2rem;
+}
+
+    .divTitle h1{
+        color: #174DBA;
+        font-size: 44px;
+        font-weight: bold;
+    }
 
 .user {
     background-color: #fff;
@@ -135,11 +148,20 @@ input, .inp {
 
     .user .divInfo {
         margin: 1rem auto;
+        display: flex;
+        flex-direction: column;
     }
 
-    .user .divInfo > span {
+    .user .divInfo .nome {
         color: #174DBA;
-        width: 100%;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .user .divInfo .email {
+        margin-top: .5rem;
+        color: #505050;
+        font-size: 16px;
     }
 
 .divCadastro {
@@ -168,7 +190,7 @@ select {
 }
 
 .passInfo {
-    color: #aeaeae;
+    color: #aaaaaa;
     font-size: 14px;
     display: block;
     margin-top: 0.3rem;
