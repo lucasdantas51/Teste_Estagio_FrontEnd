@@ -1,0 +1,136 @@
+@font-face {
+    font-family: HelveticaNeue;
+    src: url('/assets/Helvetica-Neue-Font/Helvetica_Neue/Helvetica_Neue_Medium_Extended.otf');
+}
+
+* {
+    font-family: HelveticaNeue;
+}
+
+html, body {
+    background-color: #eff0f3;
+    /* width: 100%; height: 100%; */
+}
+
+body {
+    height: max-content;
+    margin: 0; 
+    padding: 4rem 0 0 0;
+    /* display: grid;
+    grid-template-rows: 1fr 3fr; */
+    
+}
+
+header {
+    background-color: #174DBA;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+header img {
+    max-height: 70%;
+    margin-top: .5rem;
+
+    /* align-self: center; */
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    /* text-align: center; */
+    /* height: 100%; */
+}
+
+.position {
+    width: fit-content;
+    margin: 5rem auto;
+    background-color: #fff;
+    padding: 2rem 5rem;
+    border-radius: 5px;
+}
+
+.title h1 {
+    text-align: center;
+    color: #174DBA;
+    font-size: 32px;
+}
+
+.inputs div{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputs div label {
+    color: #174DBA;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input, .inp {
+    width: 100%;
+    border: 1px solid #174DBA;
+    border-radius: 5px;
+    padding: .5rem 0;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+    .buttons span {
+        text-align: center;
+    }
+
+.btnPrimary {
+    /* width: 100%; */
+    background-color: #174DBA;
+    padding: .5rem;
+    margin: 2rem 0;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.listUsers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user {
+    background-color: #fff;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+    .user .divFuncoes {
+        text-align: right;
+    }
+
+        .user .divFuncoes img {
+            height: 1.7rem;
+        }
+    
+    .user .foto {
+        border-radius: 2rem;
+    }
+
+    .user .divInfo {
+        margin: 1rem auto;
+    }
+
+    .user .divInfo > span {
+        color: #174DBA;
+        width: 100%;
+    }

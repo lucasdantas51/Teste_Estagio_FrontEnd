@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <img src="assets/logo-uppersoft.png" alt="Logo" >
+    </header>
+    <div class="container">
+        <div class="position">
+            
+            <div class="title">
+                <h1>Acessar</h1>
+            </div>
+
+            <div class="inputs">
+                
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" name="nome" id="nome" />
+                </div>
+
+                <div>
+                    <label for="email">Senha:</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+
+                <div>
+                    <label for="estado">Estado:</label>
+
+                    <select class="inp">
+                        <option value="" disabled></option>
+                        <option value="Solteiro (a)">Solteiro (a)</option>
+                        <option value="Casado (a)">Casado (a)</option>
+                        <option value="Viuvo (a)">Viuvo (a)</option>
+                        <option value="União Estável">União Estável</option>
+                        <option value="Prefiro não declarar">Prefiro não declarar</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="sexo">Sexo:</label>
+
+                    <input type="radio" name="sexo" id="feminino" />
+                    <label for="feminino">Feminino</label>
+                    
+                    <input type="radio" name="sexo" id="masculino" />
+                    <label for="masculino">Masculino</label>
+                    
+                    <input type="radio" name="sexo" id="outro" />
+                    <label for="outro">Outro</label>
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" />
+                </div>
+
+                <div>
+                    <label for="confSenha">Confirmar senha:</label>
+                    <input type="password" name="confSenha" id="confSenha" />
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <a class="btnPrimary" href="index.html">CADASTRAR</a>
+
+                <span>Já possui conta? <a href="index.html">Entre aqui</a></span>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
