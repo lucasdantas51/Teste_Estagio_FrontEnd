@@ -17,4 +17,4 @@ O Axios está sendo utilizado via CDN pelo script no arquivo lista-usuarios.html
 ```
 
 ## Observação: 
-No setimo item dos pré-requisitos diz para o botão "entre aqui" direcionar para a tela de Cadastro, porém nos Design não há esse botão. Por isso, considetei que poderia ser algum erro de digitação e que o desejado seria que o botão "Cadastre-se aqui" direcionar para a tela de Cadastro.
+No sétimo item dos pré-requisitos diz para o botão "entre aqui" direcionar para a tela de Cadastro, porém nos Design não há esse botão. Por isso, considerei que poderia ser algum erro de digitação e que o desejado seria que o botão "Cadastre-se aqui" direcionar para a tela de Cadastro.
