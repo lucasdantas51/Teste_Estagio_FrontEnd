@@ -49,9 +49,9 @@ function createUser(user) {
 window.onload = function () {
     divListUser = document.getElementsByClassName('listUsers')[0];
     
-    var loding = document.createElement('p'); 
+    var loding = document.createElement('div'); 
         loding.classList.add('loading');
-        loding.innerHTML = 'Loading...';
+        loding.innerHTML = '<div><div>';
     
     divListUser.innerHTML = loding.outerHTML;
 
